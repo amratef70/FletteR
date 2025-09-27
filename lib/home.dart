@@ -47,7 +47,14 @@ class HomePage extends StatelessWidget {
                     ),
 
 
-
+                    ElevatedButton.icon(
+                      icon: const Icon(Icons.wifi),
+                      label: const Text("عرض الشبكات القريبة", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white)),
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => const NetworksPage()));
+                      },
+                      style: ElevatedButton.styleFrom(minimumSize: const Size(double.infinity, 60), backgroundColor: Colors.black45),
+                    ),
 
 
 
