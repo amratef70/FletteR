@@ -79,6 +79,11 @@ class _DetailsPageState extends State<DetailsPage> {
                       "تفاصيل الشبكة:",
                       style: Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold, color: Colors.teal),
                     ),
+
+                    const SizedBox(height: 12),
+                    Text("اسم الشبكة (SSID): ${widget.selectedNetwork!.ssid.isNotEmpty ? widget.selectedNetwork!.ssid : 'N/A'}", style: const TextStyle(fontSize: 16)),
+
+
                   ]),
 
             ),
