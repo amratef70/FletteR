@@ -83,6 +83,10 @@ class _DetailsPageState extends State<DetailsPage> {
                     const SizedBox(height: 12),
                     Text("اسم الشبكة (SSID): ${widget.selectedNetwork!.ssid.isNotEmpty ? widget.selectedNetwork!.ssid : 'N/A'}", style: const TextStyle(fontSize: 16)),
 
+                    const SizedBox(height: 8),
+                    Text("BSSID: ${widget.selectedNetwork!.bssid}", style: const TextStyle(fontSize: 16)),
+
+
 
                   ]),
 
