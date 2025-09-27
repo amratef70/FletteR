@@ -26,6 +26,28 @@ class HomePage extends StatelessWidget {
                 ),
               ),
 
+              Padding(
+
+                padding: const EdgeInsets.all(20),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+
+
+
+
+
+
+
+
+
+
+
+
+                  ],
+                ),
+              ),
+
             ],
 
         ),
