@@ -87,6 +87,8 @@ class _DetailsPageState extends State<DetailsPage> {
                     Text("BSSID: ${widget.selectedNetwork!.bssid}", style: const TextStyle(fontSize: 16)),
 
 
+                    const SizedBox(height: 8),
+                    Text("التردد (Frequency): ${widget.selectedNetwork!.frequency} MHz", style: const TextStyle(fontSize: 16)),
 
                   ]),
 
