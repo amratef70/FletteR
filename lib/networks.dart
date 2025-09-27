@@ -27,7 +27,7 @@ class _NetworksPageState extends State<NetworksPage> {
       networks = []; // Clear previous results
     });
 
-    // تم تبسيط منطق الأذونات هنا
+
     try {
       final result = await WiFiScan.instance.getScannedResults();
       if (!mounted) return;
@@ -37,29 +37,19 @@ class _NetworksPageState extends State<NetworksPage> {
       });
       if (networks.isEmpty && _scanError.isEmpty) { // عرض الرسالة فقط إذا لم يكن هناك خطأ آخر
         _scanError = "لم يتم العثور على شبكات. تأكد أن Wi-Fi والموقع مفعلان.";
-        setState(() {}); // لتحديث الواجهة بالرسالة
+        setState(() {});
       }
     } catch (e) {
       if (!mounted) return;
       setState(() {
-        // رسالة خطأ عامة في حالة فشل الفحص لأي سبب (بما في ذلك الأذونات)
+
         _scanError = "لم يتم العثور على شبكات. تأكد أن Wi-Fi والموقع مفعلان، وأن الأذونات ممنوحة.";
         _isLoading = false;
       });
     }
   }
 
-  // دالة _handlePermissionError لم تعد مستخدمة ويمكن إزالتها إذا أردت
-  // void _handlePermissionError(String message) {
-  //   if (!mounted) return;
-  //   ScaffoldMessenger.of(context).showSnackBar(
-  //     SnackBar(content: Text(message)),
-  //   );
-  //   setState(() {
-  //     _isLoading = false;
-  //     _scanError = message;
-  //   });
-  // }
+
 
   IconData getSignalIcon(int level) {
     if (level > -55) {
@@ -108,7 +98,7 @@ class _NetworksPageState extends State<NetworksPage> {
           : networks.isEmpty // تم تعديل هذا الشرط قليلاً
           ? Center(
         child: Text(
-          // الرسالة هنا تعتمد على _scanError الذي تم تعيينه في _scanNetworks
+
           _scanError.isNotEmpty ? _scanError : "لا توجد شبكات متاحة حاليًا. حاول التحديث.",
           textAlign: TextAlign.center,
         ),
