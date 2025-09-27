@@ -58,8 +58,10 @@ class HomePage extends StatelessWidget {
 
                     SizedBox(height: 20),
 
-
-
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(12.0),
+                      child: Image.asset('assets/img_1.png'),
+                    ),
 
 
 
