@@ -9,6 +9,11 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
 
+      appBar: AppBar(
+        title: const Text("  فحص الشبكات اللاسلكية", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25,color: Colors.white)),
+        backgroundColor: Colors.deepPurpleAccent,
+        centerTitle: true,
+      ),
 
     );
   }
