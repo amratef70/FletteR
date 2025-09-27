@@ -17,6 +17,14 @@ class HomePage extends StatelessWidget {
 
         body: Stack(
             children: <Widget>[
+              Container(
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage("assets/img.png"),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
 
             ],
 
