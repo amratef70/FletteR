@@ -71,7 +71,13 @@ class _DetailsPageState extends State<DetailsPage> {
                   ),
                 ],
               ),
+
+              child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: []),
+
             ),
+
 
 
 
