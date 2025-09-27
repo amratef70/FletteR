@@ -8,6 +8,7 @@ class HomePage extends StatelessWidget {
 
 
     return Scaffold(
+        drawer: Drawer(),
 
       appBar: AppBar(
         title: const Text("  فحص الشبكات اللاسلكية", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25,color: Colors.white)),
