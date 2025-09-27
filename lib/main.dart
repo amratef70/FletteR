@@ -17,7 +17,11 @@ class MyApp extends StatelessWidget {
         textDirection: TextDirection.rtl,
 
 
-        child: ,
+        child: const Directionality(
+          textDirection: TextDirection.rtl,
+
+
+          child: HomePage(),
 
 
       ),
