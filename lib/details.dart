@@ -28,6 +28,17 @@ class _DetailsPageState extends State<DetailsPage> {
         ),
 
 
+        body: const Center(
+          child: Padding(
+            padding: EdgeInsets.all(20),
+            child: Text(
+              "لم يتم تحديد شبكة.",
+              style: TextStyle(fontSize: 18, color: Colors.grey),
+              textAlign: TextAlign.center,
+            ),
+          ),
+        ),
+
 
 
       );
