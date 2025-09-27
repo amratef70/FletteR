@@ -56,6 +56,8 @@ class HomePage extends StatelessWidget {
                       style: ElevatedButton.styleFrom(minimumSize: const Size(double.infinity, 60), backgroundColor: Colors.black45),
                     ),
 
+                    SizedBox(height: 20),
+
 
 
 
