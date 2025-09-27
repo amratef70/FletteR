@@ -14,6 +14,23 @@ class HomePage extends StatelessWidget {
               children: <Widget>[
 
 
+                const DrawerHeader(
+                  decoration: BoxDecoration(
+                    color: Colors.deepPurpleAccent,
+                  ),
+                  child: Text(
+                    'Settings',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 24,
+                    ),
+
+                  ),
+                ),
+
+
+
+
               ],
           ),
         ),
