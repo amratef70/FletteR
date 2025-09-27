@@ -44,8 +44,10 @@ class _DetailsPageState extends State<DetailsPage> {
 
 
     return Scaffold(
-
-
+      appBar: AppBar(
+        title: Text(widget.selectedNetwork!.ssid.isNotEmpty ? widget.selectedNetwork!.ssid : "تفاصيل الشبكة"),
+        backgroundColor: Colors.teal,
+      ),
     );
   }
 }
