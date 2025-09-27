@@ -50,6 +50,18 @@ class _DetailsPageState extends State<DetailsPage> {
       ),
 
         body: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+
+            child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+
+                ]
+            ),
+
+
+          ),
 
         ),
 
