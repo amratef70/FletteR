@@ -135,7 +135,7 @@ class _NetworksPageState extends State<NetworksPage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _scanNetworks,
-        backgroundColor: Colors.cyan,
+        backgroundColor: Colors.deepPurple,
         child: const Icon(Icons.refresh),
       ),
     );
