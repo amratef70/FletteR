@@ -15,6 +15,10 @@ class HomePage extends StatelessWidget {
         centerTitle: true,
       ),
 
-    );
+        body: Stack(
+
+        ),
+
+        );
   }
 }
