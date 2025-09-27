@@ -96,6 +96,9 @@ class _DetailsPageState extends State<DetailsPage> {
                     const SizedBox(height: 8),
                     Text("القدرات (Capabilities): ${widget.selectedNetwork!.capabilities}", style: const TextStyle(fontSize: 16)),
 
+                    const SizedBox(height: 8),
+                    Text("قياسي (Standard): ${widget.selectedNetwork!.standard}", style: const TextStyle(fontSize: 16)),
+
                   ]),
 
             ),
