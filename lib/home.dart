@@ -34,7 +34,17 @@ class HomePage extends StatelessWidget {
                   children: [
 
 
+                    Container(
+                      child: Stack(
+                        children: [
 
+                          Container(
+                            width: 300,
+                            child: Icon(Icons.wifi, color: Colors.white, size: 60),
+                          )
+                        ],
+                      ),
+                    ),
 
 
 
