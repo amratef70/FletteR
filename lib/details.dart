@@ -22,7 +22,10 @@ class _DetailsPageState extends State<DetailsPage> {
 
 
 
-
+        appBar: AppBar(
+          title: const Text("تفاصيل الشبكة"),
+          backgroundColor: Colors.teal,
+        ),
 
 
 
