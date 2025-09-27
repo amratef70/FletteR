@@ -90,6 +90,9 @@ class _DetailsPageState extends State<DetailsPage> {
                     const SizedBox(height: 8),
                     Text("التردد (Frequency): ${widget.selectedNetwork!.frequency} MHz", style: const TextStyle(fontSize: 16)),
 
+                    const SizedBox(height: 8),
+                    Text("قوة الإشارة: ${widget.selectedNetwork!.level} dBm", style: const TextStyle(fontSize: 16)),
+
                   ]),
 
             ),
