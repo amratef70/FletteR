@@ -48,6 +48,12 @@ class _DetailsPageState extends State<DetailsPage> {
         title: Text(widget.selectedNetwork!.ssid.isNotEmpty ? widget.selectedNetwork!.ssid : "تفاصيل الشبكة"),
         backgroundColor: Colors.teal,
       ),
+
+        body: SingleChildScrollView(
+
+        ),
+
+
     );
   }
 }
