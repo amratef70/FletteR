@@ -1,6 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:wifi_scan/wifi_scan.dart';
 
+
+class DetailsPage extends StatefulWidget {
+  final WiFiAccessPoint? selectedNetwork;
+  const DetailsPage({super.key, this.selectedNetwork});
+
+  @override
+  State<DetailsPage> createState() => _DetailsPageState();
+}
+
+
+
+
 class _DetailsPageState extends State<DetailsPage> {
   @override
   void initState() {
